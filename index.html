@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TarotWitch 🔮</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div id="particles" aria-hidden="true"></div>
+
+  <div class="app-wrapper">
+
+    <!-- ── Header ── -->
+    <header class="site-header">
+      <div class="header-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      <h1 class="site-title">TarotWitch</h1>
+      <p class="site-subtitle">Whisper your question · Let the cards speak</p>
+    </header>
+
+    <!-- ── Crystal Ball ── -->
+    <div class="crystal-container" aria-hidden="true">
+      <div id="crystal-ball" title="Click to awaken the witch">🔮</div>
+    </div>
+
+    <!-- ── Witch Message ── -->
+    <div class="witch-speech" role="status" aria-live="polite">
+      <p id="witch-message">The cards await your question, dear seeker…</p>
+    </div>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <!-- ── Question Form (table area) ── -->
+    <section id="table-area" class="table-area" aria-label="Ask the witch">
+      <div class="form-group">
+        <label for="question-input">🌙 Your Question</label>
+        <textarea
+          id="question-input"
+          name="question"
+          placeholder="What does the universe want me to know about…"
+          rows="3"
+          aria-label="Type your question for the tarot reading"
+          maxlength="500"
+        ></textarea>
+      </div>
+
+      <br />
+
+      <div class="spread-selector">
+        <label for="spread-select">✦ Choose a Spread:</label>
+        <select id="spread-select" aria-label="Select tarot spread"></select>
+      </div>
+
+      <br />
+
+      <div class="btn-row">
+        <button id="ask-btn" class="btn btn-primary" type="button">
+          🔮 Ask the Witch
+        </button>
+      </div>
+    </section>
+
+    <!-- ── Reading Section ── -->
+    <section
+      id="reading-section"
+      class="reading-section hidden"
+      aria-label="Your tarot reading"
+    >
+      <!-- Question echo -->
+      <div class="question-display">
+        <p>Your question</p>
+        <blockquote id="question-display"></blockquote>
+      </div>
+
+      <!-- Spread info -->
+      <div class="spread-info">
+        <p id="spread-label"></p>
+        <p id="spread-desc"></p>
+      </div>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <!-- Card slots rendered by JS -->
+      <div id="card-slots" role="list" aria-label="Drawn tarot cards"></div>
+
+      <!-- Controls -->
+      <div class="controls-row">
+        <button id="reveal-btn" class="btn btn-gold" type="button" disabled>
+          ✦ Reveal Next Card ✦
+        </button>
+        <button id="new-reading-btn" class="btn btn-ghost hidden" type="button">
+          ↩ New Reading
+        </button>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="site-footer">
+      <p>✦ &nbsp; TarotWitch &nbsp; ✦ &nbsp; A mystical reading awaits &nbsp; ✦</p>
+    </footer>
+
+  </div><!-- /.app-wrapper -->
+
+  <script src="js/cards.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
