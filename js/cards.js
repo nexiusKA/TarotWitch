@@ -343,7 +343,14 @@ function shuffleDeck(deck) {
  * Draw n cards from the deck
  */
 function drawCards(n) {
-  const shuffled = shuffleDeck(FULL_DECK);
+  return drawCardsFrom(FULL_DECK, n);
+}
+
+/**
+ * Draw n cards from a given deck (used for language-specific decks)
+ */
+function drawCardsFrom(deck, n) {
+  const shuffled = shuffleDeck(deck);
   return shuffled.slice(0, n);
 }
 
