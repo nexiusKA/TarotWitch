@@ -206,7 +206,7 @@ function resetReading() {
 // ─── Witch Messages ───────────────────────────────────────────────────────────
 function setWitchMessage(msg) {
   witchMessage.classList.remove("fade-in");
-  void witchMessage.offsetWidth; // reflow
+  void witchMessage.offsetWidth; // Force reflow to restart CSS animation
   witchMessage.textContent = msg;
   witchMessage.classList.add("fade-in");
 }

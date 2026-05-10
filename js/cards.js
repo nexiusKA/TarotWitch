@@ -300,8 +300,8 @@ function buildDeck() {
         arcana: "Minor",
         suit,
         symbol: SUIT_SYMBOLS[suit],
-        upright: suitData.pip[pipIndex]?.upright || `${rankLabel} of ${suit} energy – ${suitData.theme}`,
-        reversed: suitData.pip[pipIndex]?.reversed || `Blocked ${suitData.theme}`,
+        upright: suitData.pip[pipIndex]?.upright || `${rankLabel} of ${suit} energy - ${suitData.theme}`,
+        reversed: suitData.pip[pipIndex]?.reversed || `blocked ${suitData.theme}`,
       });
     }
 

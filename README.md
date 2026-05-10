@@ -7,7 +7,7 @@ A mystical tarot-reading web app. Type your question, choose a spread, and let t
 - **Full 78-card deck** — all 22 Major Arcana and 56 Minor Arcana with upright & reversed meanings
 - **Three spreads** — Single Card, Three-Card (Past / Present / Future), Celtic Cross (10 cards)
 - **Card flip animation** — reveal cards one at a time with a 3-D flip effect
-- **Reversed cards** — ~30 % of drawn cards appear reversed for deeper readings
+- **Reversed cards** — ~30% of drawn cards appear reversed for deeper readings
 - **Mystical UI** — dark purple / gold theme with floating particles and a crystal ball
 - **Responsive** — works on desktop and mobile
 
